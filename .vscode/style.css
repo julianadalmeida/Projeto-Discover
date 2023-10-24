@@ -4,11 +4,12 @@
   box-sizing: border-box;
 }
 
-:root {--text-color: white;
+:root {
+  --text-color: white;
   --bg-url: url(./assets/bg-mobile.jpg);
   --stroke-color: rgba(255, 255, 255, 0.5);
-  --surface-color: rgba(255, 255, 255, 0.1);
-  --surface-color-hover: rgba(255, 255, 255, 0.05);
+  --surface-color: rgba(255, 255, 255, 0.05);
+  --surface-color-hover: rgba(255, 255, 255, 0.02);
   --hightlight-color: rgba(255, 255, 255, 0.2);
   --switch-bg-url: url(./assets/moon-stars.svg);
 }
@@ -18,8 +19,8 @@
   --bg-url: url(./assets/bg-mobile-light.jpg);
   --stroke-color: rgba(0,0,0,0.5);
   --surface-color: rgba(0,0,0,0.05);
-  --surface-color-hover: rgba(0,0,0,0.5);
-  --hightlight-color: rgba(0,0,0,0.2);
+  --surface-color-hover: rgba(0,0,0,0.2);
+  --hightlight-color: rgba(0,0,0,0.1);
   --switch-bg-url: url(./assets/sun.svg);
 }
 
@@ -34,7 +35,7 @@ body * {
 }
 
 #container {
-  width: 360px;
+  width: 100%;
   max-width: 588px;
   margin: 56px auto 0px;
   padding: 0 24px;
@@ -88,6 +89,7 @@ body * {
   right: 0;
   left: initial;
 
+
 }
 
 #switch span {
@@ -117,8 +119,8 @@ ul {
 
 ul li a {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 
   padding: 16px 24px;
 
@@ -148,10 +150,8 @@ ul li a:hover {
 /* social links */
 #social-links {
   display: flex;
-  gap: 32px;
   justify-content: center;
   
-
   padding: 24px 0;
 
   font-size: 24px;
@@ -161,7 +161,6 @@ ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-
   padding: 16px;
 
   transition: background 0.2s;
